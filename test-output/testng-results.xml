@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="2" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-09-03T14:41:29 EDT" name="Orange HRM" finished-at="2023-09-03T14:42:13 EDT" duration-ms="43932">
+    <groups>
+    </groups>
+    <test started-at="2023-09-03T14:41:29 EDT" name="DemoTest1" finished-at="2023-09-03T14:42:13 EDT" duration-ms="43932">
+      <class name="test_layer.Login_Test">
+        <test-method is-config="true" signature="initial_setup()[pri:0, instance:test_layer.Login_Test@2a65fe7c]" started-at="2023-09-03T14:41:30 EDT" name="initial_setup" finished-at="2023-09-03T14:41:37 EDT" duration-ms="7266" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initial_setup -->
+        <test-method signature="login(java.lang.String,java.lang.String)[pri:0, instance:test_layer.Login_Test@2a65fe7c]" started-at="2023-09-03T14:41:37 EDT" name="login" data-provider="getdata" finished-at="2023-09-03T14:41:41 EDT" duration-ms="4213" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="close()[pri:0, instance:test_layer.Login_Test@2a65fe7c]" started-at="2023-09-03T14:41:41 EDT" name="close" finished-at="2023-09-03T14:41:42 EDT" duration-ms="1174" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="initial_setup()[pri:0, instance:test_layer.Login_Test@2a65fe7c]" started-at="2023-09-03T14:41:42 EDT" name="initial_setup" finished-at="2023-09-03T14:41:49 EDT" duration-ms="6646" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initial_setup -->
+        <test-method signature="login(java.lang.String,java.lang.String)[pri:0, instance:test_layer.Login_Test@2a65fe7c]" started-at="2023-09-03T14:41:49 EDT" name="login" data-provider="getdata" finished-at="2023-09-03T14:41:53 EDT" duration-ms="3796" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Jeevan]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[js123456]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index] but found [https://opensource-demo.orangehrmlive.com/web/index.php/auth/login]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index] but found [https://opensource-demo.orangehrmlive.com/web/index.php/auth/login]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1577)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:655)
+at org.testng.Assert.assertEquals(Assert.java:665)
+at test_layer.Login_Test.login(Login_Test.java:47)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1623)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="close()[pri:0, instance:test_layer.Login_Test@2a65fe7c]" started-at="2023-09-03T14:41:53 EDT" name="close" finished-at="2023-09-03T14:41:54 EDT" duration-ms="1186" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="initial_setup()[pri:0, instance:test_layer.Login_Test@2a65fe7c]" started-at="2023-09-03T14:41:54 EDT" name="initial_setup" finished-at="2023-09-03T14:42:00 EDT" duration-ms="6225" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initial_setup -->
+        <test-method signature="login(java.lang.String,java.lang.String)[pri:0, instance:test_layer.Login_Test@2a65fe7c]" started-at="2023-09-03T14:42:00 EDT" name="login" data-provider="getdata" finished-at="2023-09-03T14:42:04 EDT" duration-ms="3719" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Test]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Test1234]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index] but found [https://opensource-demo.orangehrmlive.com/web/index.php/auth/login]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index] but found [https://opensource-demo.orangehrmlive.com/web/index.php/auth/login]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1577)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:655)
+at org.testng.Assert.assertEquals(Assert.java:665)
+at test_layer.Login_Test.login(Login_Test.java:47)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1623)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="close()[pri:0, instance:test_layer.Login_Test@2a65fe7c]" started-at="2023-09-03T14:42:04 EDT" name="close" finished-at="2023-09-03T14:42:05 EDT" duration-ms="988" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="initial_setup()[pri:0, instance:test_layer.Login_Test@2a65fe7c]" started-at="2023-09-03T14:42:05 EDT" name="initial_setup" finished-at="2023-09-03T14:42:12 EDT" duration-ms="6997" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initial_setup -->
+        <test-method signature="verifyTitle()[pri:0, instance:test_layer.Login_Test@2a65fe7c]" started-at="2023-09-03T14:42:12 EDT" name="verifyTitle" finished-at="2023-09-03T14:42:12 EDT" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTitle -->
+        <test-method is-config="true" signature="close()[pri:0, instance:test_layer.Login_Test@2a65fe7c]" started-at="2023-09-03T14:42:12 EDT" name="close" finished-at="2023-09-03T14:42:13 EDT" duration-ms="955" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- test_layer.Login_Test -->
+    </test> <!-- DemoTest1 -->
+  </suite> <!-- Orange HRM -->
+</testng-results>
